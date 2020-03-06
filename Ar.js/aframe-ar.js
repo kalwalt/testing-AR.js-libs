@@ -2594,9 +2594,9 @@ ARjs.Context.prototype._initArtoolkit = function (onCompleted) {
     this._artoolkitProjectionAxisTransformMatrix.multiply(new THREE.Matrix4().makeRotationY(Math.PI))
     this._artoolkitProjectionAxisTransformMatrix.multiply(new THREE.Matrix4().makeRotationZ(Math.PI))
 
-  /*  var onError = function(err) {
+    var onError = function(err) {
         console.error(err);
-    };*/
+    };
 
     // get cameraParameters
     var cameraParameters = new ARCameraParam(_this.parameters.cameraParametersUrl,
@@ -2657,8 +2657,8 @@ ARjs.Context.prototype._initArtoolkit = function (onCompleted) {
 
             // notify
             onCompleted()
-        }//,
-        //onError
+        },
+        onError
     )
     return this
 }
