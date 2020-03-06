@@ -2436,7 +2436,7 @@ ARjs.Context = THREEx.ArToolkitContext = function (parameters) {
         matrixCodeType: '3x3',
 
         // url of the camera parameters
-        cameraParametersUrl: ARjs.Context.baseURL + 'parameters/camera_para.dat',
+        cameraParametersUrl: ARjs.Context.baseURL + 'data/data/camera_para.dat',
 
         // tune the maximum rate of pose detection in the source image
         maxDetectionRate: 60,
@@ -2734,7 +2734,7 @@ ARjs.Profile.prototype.reset = function () {
     }
 
     this.contextParameters = {
-        cameraParametersUrl: THREEx.ArToolkitContext.baseURL + 'data/data/camera_para.dat',
+        cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
         detectionMode: 'mono',
     }
     this.defaultMarkerParameters = {
