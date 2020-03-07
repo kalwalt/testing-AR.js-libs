@@ -5,10 +5,13 @@
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src='../resources/libs/aframe-ar.min.js'></script>
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded arjs='sourceType: webcam;'>
-      <a-marker preset='hiro'>
+	<a-scene embedded arjs='sourceType: webcam; '>
+	   <a-marker
+	    type='pattern'
+	    url='./../data/data/patt.hiro'
+      >
         <a-box position='0 0 0.5' material='opacity: 0.5;'></a-box>
-      </a-marker>
+     </a-marker>
     <a-entity camera> </a-entity>
 	</a-scene>
 </body>
